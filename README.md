@@ -80,6 +80,8 @@ ping www.google.com
 
 ✅ If successful, QTrobot is connected to your network and has internet access.
 
+---
+
 ## 🔊 Audio
 
 ### Speech
@@ -95,13 +97,58 @@ rosservice call /qt_robot/behavior/talkText "message: 'The quick brown fox jumps
 rosservice call /qt_robot/setting/setVolume "volume: 150"
 ```
 
-### Play Audio
+### 🔈 Play Audio
+
+> 📖 Reference: [LuxAI Speakers Module Docs](https://docs.luxai.com/docs/v1/modules/speakers)
+
+#### Using Publisher
 ```bash
 rostopic pub /qt_robot/audio/play std_msgs/String "data: 'QT/Komiku_Glouglou'"
 ```
+
+#### Using Service Call
 ```bash
 rosservice call /qt_robot/audio/play "filename: 'QT/Komiku_Glouglou'
 filepath: ''"
 ```
 
+> 💡 **Tip:** Use the publisher to trigger audio and keep moving, use the service call if you need to confirm playback completed before proceeding.
+---
 
+## 🤲 Gestures
+
+> 📖 Reference: [LuxAI Create Your Own Gesture](https://docs.luxai.com/docs/v1/tutorials/python/python_ros_record)
+
+### Both Arms Test
+```bash
+rosservice call /qt_robot/gesture/play "name: 'QT/happy'
+speed: 1.0"
+```
+```bash
+rosservice call /qt_robot/gesture/play "name: 'QT/clapping'
+speed: 1.0"
+```
+
+### Right Arm Test
+```bash
+rosservice call /qt_robot/gesture/play "name: 'QT/bye'
+speed: 1.0"
+```
+
+---
+
+## 😊 Emotions
+
+> 📖 Reference: [LuxAI Display Module Docs](https://docs.luxai.com/docs/v1/modules/display)
+
+### Using Publisher
+```bash
+rostopic pub /qt_robot/emotion/show std_msgs/String "data: 'QT/happy'"
+```
+
+### Using Service Call
+```bash
+rosservice call /qt_robot/emotion/show "name: 'QT/happy'"
+```
+
+> 💡 **Tip:** Use the publisher to set an emotion and keep moving, use the service call if you need to confirm the emotion displayed before proceeding.
