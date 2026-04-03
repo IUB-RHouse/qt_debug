@@ -2,7 +2,7 @@
 
 > 📖 Reference: [LuxAI Intro to Code (V1)](https://docs.luxai.com/docs/v1/intro_code)
 
-Steps to connect QTrobot to RHouse or IU network.
+Steps to connect QTrobot to WiFi or IU network.
 
 ---
 
