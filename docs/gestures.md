@@ -1,0 +1,21 @@
+## 🤲 Gestures
+
+> 📖 Reference: [LuxAI Create Your Own Gesture](https://docs.luxai.com/docs/v1/tutorials/python/python_ros_record)
+
+### Both Arms Test
+```bash
+rosservice call /qt_robot/gesture/play "name: 'QT/happy'
+speed: 1.0"
+```
+```bash
+rosservice call /qt_robot/gesture/play "name: 'QT/clapping'
+speed: 1.0"
+```
+
+### Right Arm Test
+```bash
+rosservice call /qt_robot/gesture/play "name: 'QT/bye'
+speed: 1.0"
+```
+
+---
