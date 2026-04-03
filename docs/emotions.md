@@ -1,6 +1,10 @@
-## 😊 Emotions
+# 😊 Emotions
 
-> 📖 Reference: [LuxAI Display Module Docs](https://docs.luxai.com/docs/v1/modules/display)
+> 📖 Reference: [LuxAI Display Module](https://docs.luxai.com/docs/v1/modules/display)
+
+Commands for displaying emotions on QTrobot's screen.
+
+---
 
 ### Using Publisher
 ```bash
