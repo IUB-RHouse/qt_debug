@@ -11,7 +11,7 @@ A quick-reference guide for working with QTrobot at Indiana University.
 
 | Section | Description |
 |---|---|
-| [WiFi Setup](docs/wifi-setup.md) | Connecting to RHouse & IU network |
+| [WiFi Setup](docs/wifi-setup.md) | Connecting to WiFi & IU network |
 | [Audio](docs/audio.md) | Speech, volume, and audio playback |
 | [Gestures](docs/gestures.md) | Arm gestures and custom recording |
 | [Emotions](docs/emotions.md) | Emotion display commands |
