@@ -1,4 +1,8 @@
-## 🔊 Audio
+# 🔊 Audio
+
+Commands for speech, volume control, and audio playback.
+
+---
 
 ### Speech
 ```bash
@@ -13,7 +17,7 @@ rosservice call /qt_robot/behavior/talkText "message: 'The quick brown fox jumps
 rosservice call /qt_robot/setting/setVolume "volume: 150"
 ```
 
-### 🔈 Play Audio
+### Play Audio (e.g., mp3)
 
 > 📖 Reference: [LuxAI Speakers Module Docs](https://docs.luxai.com/docs/v1/modules/speakers)
 
@@ -29,4 +33,3 @@ filepath: ''"
 ```
 
 > 💡 **Tip:** Use the publisher to trigger audio and keep moving, use the service call if you need to confirm playback completed before proceeding.
----
