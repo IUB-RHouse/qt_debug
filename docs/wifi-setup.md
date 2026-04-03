@@ -1,4 +1,10 @@
-## 🌐 Internet / WiFi Setup
+# 🌐 WiFi Setup
+
+> 📖 Reference: [LuxAI Intro to Code (V1)](https://docs.luxai.com/docs/v1/intro_code)
+
+Steps to connect QTrobot to RHouse or IU network.
+
+---
 
 ### Step 1 — Access QTRP via SSH
 
