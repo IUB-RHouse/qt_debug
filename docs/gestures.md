@@ -1,6 +1,10 @@
-## 🤲 Gestures
+# 🤲 Gestures
 
 > 📖 Reference: [LuxAI Create Your Own Gesture](https://docs.luxai.com/docs/v1/tutorials/python/python_ros_record)
+
+Commands for playing and recording arm gestures.
+
+---
 
 ### Both Arms Test
 ```bash
