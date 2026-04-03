@@ -1,7 +1,5 @@
 # 🤲 Gestures
 
-> 📖 Reference: [LuxAI Create Your Own Gesture](https://docs.luxai.com/docs/v1/tutorials/python/python_ros_record)
-
 Commands for playing and recording arm gestures.
 
 ---
@@ -22,4 +20,6 @@ rosservice call /qt_robot/gesture/play "name: 'QT/bye'
 speed: 1.0"
 ```
 
----
+### Recording Your Own Gesture
+
+> 📖 Reference: [LuxAI Create Your Own Gesture](https://docs.luxai.com/docs/v1/tutorials/python/python_ros_record)
