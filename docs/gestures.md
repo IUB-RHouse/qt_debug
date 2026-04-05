@@ -121,6 +121,7 @@ sudo mv /home/developer/my_gesture.xml /home/qtrobot/robot/data/gestures/QT/
 
 # Delete the original
 sudo rm /home/qtrobot/robot/data/gestures/my_gesture.xml
+```
 
 #### Step 5 — Clean Up / Remove a Gesture
 
