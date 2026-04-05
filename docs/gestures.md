@@ -5,10 +5,14 @@ Commands for playing and recording arm gestures.
 ---
 
 ### Both Arms Test
+
+#### `QT/happy` — Tests shoulder rotation
 ```bash
 rosservice call /qt_robot/gesture/play "name: 'QT/happy'
 speed: 1.0"
 ```
+
+#### `QT/clapping` — Tests elbow flexion
 ```bash
 rosservice call /qt_robot/gesture/play "name: 'QT/clapping'
 speed: 1.0"
