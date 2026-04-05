@@ -5,9 +5,13 @@ Commands for speech, volume control, and audio playback.
 ---
 
 ### Speech
+
+#### `speech/say` — Robot speaks without mouth animation
 ```bash
 rosservice call /qt_robot/speech/say "message: 'The quick brown fox jumps over the lazy dog.'"
 ```
+
+#### `behavior/talkText` — Robot speaks with animated mouth
 ```bash
 rosservice call /qt_robot/behavior/talkText "message: 'The quick brown fox jumps over the lazy dog.'"
 ```
