@@ -25,6 +25,6 @@ speed: 1.0"
 > 📖 Reference: [LuxAI Create Your Own Gesture](https://docs.luxai.com/docs/v1/tutorials/python/python_ros_record)
 >
 ```bash
-rosservice call /qt_robot/gesture/play "name: 'my_gestures'
+rosservice call /qt_robot/gesture/play "name: 'my_gesture'
 speed: 1.0"
 ```
