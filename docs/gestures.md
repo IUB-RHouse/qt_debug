@@ -65,7 +65,7 @@ if __name__ == '__main__':
         name = sys.argv[1]
         parts = ["left_arm","right_arm","head"]
         input('Press enter to START recording ...\n')
-        speechSay('Press enter to START recording.')
+        speechSay('Recording now.')
         res = gestureRecord(parts, True, 0, 0)
         if not res.status:
             rospy.logfatal("Could not start recording gesture '%s' using '%s'." % (name, parts))
