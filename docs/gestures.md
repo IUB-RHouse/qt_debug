@@ -91,7 +91,46 @@ if __name__ == '__main__':
 
 Provide a name for your gesture when running the script:
 ```bash
-python3 tutorial_qt_record_node.py wave_hello
+python3 tutorial_qt_record_node.py my_gesture
 ```
 
-> 💡 **Tip:** Replace `wave_hello` with whatever you want to name your gesture. This will be the name of the saved XML file.
+> 💡 **Tip:** Replace `my_gesture` with whatever you want to name your gesture. This will be the name of the saved XML file.
+
+#### Step 4 — Verify and Move the Gesture File
+
+After recording, check that the gesture was saved:
+```bash
+ssh developer@192.168.100.1
+cd /home/qtrobot/robot/data/gestures
+ls
+```
+
+Open a **new terminal** and test the gesture:
+```bash
+rosservice call /qt_robot/gesture/play "name: 'my_gesture'
+speed: 1.0"
+```
+
+Once verified, move the file from the gestures folder to the `QT` subfolder:
+```bash
+# Copy to home directory first
+sudo scp my_gesture.xml developer@192.168.100.1:/home/developer/
+
+# Move to the QT folder
+sudo mv /home/developer/my_gesture.xml /home/qtrobot/robot/data/gestures/QT/
+
+# Delete the original
+sudo rm /home/qtrobot/robot/data/gestures/my_gesture.xml
+
+#### Step 5 — Clean Up / Remove a Gesture
+
+From the QTRD terminal, remove the gesture file:
+```bash
+sudo rm /home/qtrobot/robot/data/gestures/QT/my_gesture.xml
+```
+
+> ⚠️ **Warning:** `rm` is permanent — double check the filename before running.
+
+
+
+
