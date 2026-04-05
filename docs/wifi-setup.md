@@ -53,10 +53,9 @@ ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
 country=LU
 
-# Home/office network (commented out)
 #network={
-#    ssid="JillsResidents"
-#    psk="GuestWiFi"
+#    ssid="<your home SSID>"
+#    psk="<your passphrase>"
 #}
 
 network={
