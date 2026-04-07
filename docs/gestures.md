@@ -87,11 +87,17 @@ if __name__ == '__main__':
         pass
     rospy.loginfo("finished!")
 ```
+
 #### Step 3 — Run the Script
 
-Provide a name for your gesture when running the script:
+From the QTPC terminal, navigate to the script location and run it:
+
 ```bash
+cd ~/catkin_ws/src/tutorial_qt_record/src
 python3 tutorial_qt_record_node.py my_gesture
+```
+
+> 💡 **Tip:** Replace `my_gesture` with whatever you want to name your gesture. This will be the name of the saved XML file.
 ```
 
 > 💡 **Tip:** Replace `my_gesture` with whatever you want to name your gesture. This will be the name of the saved XML file.
